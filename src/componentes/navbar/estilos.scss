@@ -1,46 +1,49 @@
 @import "../cores/estilo.scss";
 
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
-    h1{
+    transition: .5s;
+
+    h1 {
         font-size: 2.5rem;
         color: $branco;
     }
-    nav{
-        .menu-hamburg{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 2rem;
-            cursor: pointer;
+
+    nav {
+        .menu-hamburg {
             display: none;
+
             .um,
             .dois,
-            .tres{
+            .tres {
                 width: 3rem;
                 height: .3rem;
-                background-color: $branco;
-            }
-            .menu-hamburg.on{
-                display: block;
+                background: linear-gradient(90deg, $azul, $azul-claro);
+                margin-top: .5rem;
+                transition: .5s;
+
             }
         }
-        }
-        ul{
+
+        ul {
             display: flex;
             list-style: none;
-            li{
+
+
+            li {
                 padding: 0 2rem;
-                a{
+
+                a {
                     font-size: 1.5rem;
                     font-weight: 500;
                     text-decoration: none;
                     color: $branco;
-                    &::after{
+
+                    &::after {
                         content: "";
                         display: block;
                         width: 0;
@@ -49,7 +52,8 @@ header{
                         border-radius: 2rem;
                         transition: width .3s;
                     }
-                    &:hover::after{
+
+                    &:hover::after {
                         width: 100%;
                         transition: width .3s;
                     }
@@ -57,4 +61,69 @@ header{
             }
         }
     }
-    
+
+    @media screen and (max-width: 978px) {
+
+        nav {
+            ul {
+                display: none;
+                transition: all .5s;
+
+            }
+
+            .menu-hamburg {
+                display: block;
+                position: absolute;
+                top: 2rem;
+                right: 2rem;
+                z-index: 2;
+                
+            }
+        }
+
+
+
+        nav#mostrar {
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 11;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .5s;
+
+            ul {
+                display: block;
+                transition: all .5s;
+
+                li {
+                    text-align: center;
+                    padding: 1rem 0;
+                }
+            }
+            .menu-hamburg{
+                .um {
+                    transform: rotate(40deg) translateX(.5rem) translateY(.3rem);
+                    transition: .5s;
+
+                }
+
+                .dois {
+                    opacity: 0;
+                    transition: .5s;
+
+                }
+
+                .tres {
+                    transform: rotate(-40deg) translateX(.7rem) translateY(-.7rem);
+                    transition: .5s;
+
+                }
+            }
+        }
+    }
+}
