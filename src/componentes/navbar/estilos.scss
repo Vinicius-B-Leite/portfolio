@@ -1,0 +1,60 @@
+@import "../cores/estilo.scss";
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    h1{
+        font-size: 2.5rem;
+        color: $branco;
+    }
+    nav{
+        .menu-hamburg{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 2rem;
+            cursor: pointer;
+            display: none;
+            .um,
+            .dois,
+            .tres{
+                width: 3rem;
+                height: .3rem;
+                background-color: $branco;
+            }
+            .menu-hamburg.on{
+                display: block;
+            }
+        }
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            li{
+                padding: 0 2rem;
+                a{
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: $branco;
+                    &::after{
+                        content: "";
+                        display: block;
+                        width: 0;
+                        height: .3rem;
+                        background: linear-gradient(90deg, $azul, $azul-claro);
+                        border-radius: 2rem;
+                        transition: width .3s;
+                    }
+                    &:hover::after{
+                        width: 100%;
+                        transition: width .3s;
+                    }
+                }
+            }
+        }
+    }
+    
