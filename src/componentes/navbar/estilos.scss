@@ -8,15 +8,14 @@ header {
     padding: 2rem;
     transition: .5s;
 
-    h1 {
-        font-size: 2.5rem;
+    h1{
         color: $branco;
+        font-size: 3rem;
     }
 
     nav {
         .menu-hamburg {
             display: none;
-
             .um,
             .dois,
             .tres {
@@ -70,14 +69,8 @@ header {
                 transition: all .5s;
 
             }
-
-            .menu-hamburg {
+            .menu-hamburg{
                 display: block;
-                position: absolute;
-                top: 2rem;
-                right: 2rem;
-                z-index: 2;
-                
             }
         }
 
@@ -103,9 +96,18 @@ header {
                 li {
                     text-align: center;
                     padding: 1rem 0;
+                    a{
+                        font-size:2rem;
+                    }
                 }
             }
             .menu-hamburg{
+                display: block;
+                position: absolute;
+                top: 2.5rem;
+                right: 2rem;
+                z-index: 2;
+                
                 .um {
                     transform: rotate(40deg) translateX(.5rem) translateY(.3rem);
                     transition: .5s;
@@ -124,6 +126,23 @@ header {
 
                 }
             }
+        }
+    }
+
+    @media screen and (max-width: 408px) {
+        header{
+            .menu-hamburg{
+                right: 1rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 360px) {
+        nav#mostrar{
+            .menu-hamburg{
+                top: 4.5rem;
+            }
+
         }
     }
 }

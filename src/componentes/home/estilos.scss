@@ -1,48 +1,93 @@
 @import '../cores/estilo.scss';
 
-.hero{
+.hero {
     position: absolute;
-
     top: 0;
     left: 0;
     height: 100vh;
     width: 100%;
-    z-index: -1 ;
+    z-index: -1;
     background-color: black;
-    background-image: url("");
     color: $branco;
-    .hero-titulo{
-        height: 24rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        h1{
-            font-size: 5rem;
-            word-spacing: 1rem;
-        }
-    }
-    h2{
-        padding: 3rem;
-        height: 40vh;
-    }
-    h3{
+    box-sizing: border-box;
+    h3 {
         text-align: center;
         font-size: 1.4rem;
-        .icon{
+        margin-top: 15rem;
+        .icon {
             font-size: 1.4rem;
-            animation: flexinha 1.5s ease-in-out 0s  infinite;
+            animation: flexinha 1.5s ease-in-out 0s infinite;
             background: -webkit-linear-gradient($azul, $azul-claro);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
     }
+    .hero-detalhes{
+        width: 50%; 
+        padding: 3rem 2rem;
+        box-sizing: border-box; 
+        h1{
+            padding-top: 3rem;
+            font-size: 5rem;
+            word-spacing: 1rem;
+            line-height: 10rem;
+            text-align: center;
+        }
+        h2{
+            font-size: 1.5rem;
+            line-height: 3rem;
+            padding-bottom: 2rem;
+            text-align: center;
+        }
+        .conteiner{
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+
+    
+    @media screen and (max-width: 1500px) {
+        h3{
+            margin-top: 4rem;
+        }
+    }
+    @media screen and (max-width: 1195px) {
+        .hero-detalhes{
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 610px) {
+        .hero-detalhes{
+            padding: .5rem;
+        }
+    }
+    @media screen and (max-width: 555px) {
+        .hero-detalhes{
+            h1{
+                line-height: 5rem;
+            }
+        }
+    }
+    @media screen and (max-width: 372px) {
+        .hero-detalhes{
+            h1{
+                line-height: 5rem;
+                padding-top: 1rem;
+            }
+            h2{
+                line-height: 3rem;
+            }
+        }
+    }
+    
 }
 
 @keyframes flexinha {
-    from{
+    from {
         transform: translateY(-.5rem);
     }
-    to{
+
+    to {
         transform: translateY(1rem);
     }
 }

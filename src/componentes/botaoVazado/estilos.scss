@@ -1,0 +1,14 @@
+@import '../cores/estilo.scss';
+
+.botao-vazado{
+    background: transparent;
+    color: $azul-claro;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1rem;
+    border: .3rem solid $azul-claro;
+    border-radius: 1rem;
+    cursor: pointer;
+    text-shadow: 0 0 .5rem  $azul, 0 0 .5rem $azul-claro;
+    box-shadow: 0 0 .5rem $azul;
+}
