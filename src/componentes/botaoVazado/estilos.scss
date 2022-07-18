@@ -1,6 +1,6 @@
-@import '../cores/estilo.scss';
+@import '../config/estilo.scss';
 
-.botao-vazado{
+.botao-vazado {
     background: transparent;
     color: $azul-claro;
     font-size: 1.5rem;
@@ -9,6 +9,13 @@
     border: .3rem solid $azul-claro;
     border-radius: 1rem;
     cursor: pointer;
-    text-shadow: 0 0 .5rem  $azul, 0 0 .5rem $azul-claro;
+    text-shadow: 0 0 1rem $azul, 0 0 1rem $azul-claro;
     box-shadow: 0 0 .5rem $azul;
+    text-decoration: none;
+    transition: .5s;
+    &:hover {
+        text-shadow: 0 0 2rem $azul, 0 0 2rem $azul-claro;
+        box-shadow: 0 0 2rem $azul;
+        transition: .5s;
+    }
 }

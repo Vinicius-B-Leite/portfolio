@@ -1,0 +1,59 @@
+@import '../config/estilo.scss';
+
+.sobre{
+    width: 100%;
+    height: auto;
+    background-color: $preto2;
+    padding: 2rem 0;
+    h2{
+        color: $branco;
+        text-align: center;
+        font-size: 1.8rem;
+        padding-top: 2rem;
+    }
+    .conteiner{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .sobre-opcoes{
+            ul{
+                list-style: none;
+                li{
+                    padding: 2rem;
+                    display: flex;
+                    cursor: pointer;
+                    color: $cinza;
+                    span{
+                        font-size: 2rem;
+                        color: $cinza;
+                    }
+                    .linha{
+                        width: 1rem;
+                        height: 2.5rem;
+                        background-color: $azul;
+                        margin-right: 1rem;
+                    }
+
+                    .linha.ativado{
+                        background-color: $azul-claro;
+                        box-shadow: 0 0 1rem  .5rem $azul-claro;
+                        transition: .5s;
+                    }
+                    .titulo-ativado{
+                        color: $branco;
+                        transition: .5s;
+                    }
+                }
+            }
+
+        }
+        .sobre-descricao{
+            width: 60%;
+            color: $branco;
+            padding: 2rem;  
+            font-size: 1.3rem;
+            line-height: 2rem;
+            text-align: justify;
+        }
+    }
+}

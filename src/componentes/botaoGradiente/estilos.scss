@@ -1,4 +1,4 @@
-@import '../cores/estilo.scss';
+@import '../config/estilo.scss';
 
 .botao-gradiente{
     color: $branco;
@@ -6,7 +6,7 @@
     background: linear-gradient(90deg, $azul, $azul-claro);
     font-size: 1.5rem;
     font-weight: 600;
-    padding: 1rem;
+    padding: 1.3rem 1rem 1rem 1rem;
     border-radius: 1rem;
     cursor: pointer;
     text-decoration: none;
