@@ -3,6 +3,6 @@ import './estilos.scss'
 
 export default function BotaoVazado(props){
     return(
-        <a href={props.link} onClick={props.onClick} className="botao-vazado">{props.children}</a>
+        <a href={props.link} target="blanck" onClick={props.onClick} className="botao-vazado">{props.children}</a>
     )
 }

@@ -59,7 +59,7 @@ export default function Projetos(){
                     () => limite <= 2 ? setLimite(() => limite += projetos.length - limite) : setLimite(() => limite -= 1)
                     }>
                         {limite > 2 ? "Ver menos" : "Ver mais"}
-                    </BotaoVazado>
+                </BotaoVazado>
             </div>
         </section>
     )

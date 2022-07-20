@@ -11,7 +11,7 @@
     h3 {
         text-align: center;
         font-size: 1.4rem;
-        margin-top: 15rem;
+        margin-top: .5rem;
 
         .icon {
             font-size: 1.4rem;
@@ -58,7 +58,7 @@
 
         h2 {
             padding-left: 12rem;
-            padding-top: 3rem;
+            padding-top: 2rem;
         }
 
         .conteiner-botao {
@@ -71,14 +71,27 @@
 
 
     @media screen and (max-width: 1500px) {
-        h3 {
-            margin-top: 4rem;
+        h3{
+            margin-top: 0;
+        }
+        .hero-detalhes{
+            h2{
+                padding-top: .5rem;
+            }
+            .profissao{
+                padding-bottom: 1rem;
+            }
+            
         }
     }
 
     @media screen and (max-width: 1195px) {
         .hero-detalhes {
             width: 100%;
+            h2{
+                padding-left: 0;
+                text-align: center;
+            }
         }
     }
 
@@ -86,26 +99,30 @@
         .hero-detalhes {
             padding: .5rem;
         }
-    }
 
-    @media screen and (max-width: 555px) {
-        .hero-detalhes {
-            h1 {
-                line-height: 5rem;
-            }
+        h3{
+            padding-top: 2rem;
         }
     }
 
+    
+
     @media screen and (max-width: 372px) {
-        .hero-detalhes {
-            h1 {
-                line-height: 5rem;
-                padding-top: 1rem;
+        .hero-detalhes {    
+            .titulo-animado {
+                font-size: 5rem;
+                
             }
 
             h2 {
                 line-height: 3rem;
             }
+        }
+    }
+
+    @media screen and (max-width: 560px) {
+        h3{
+            display: none;
         }
     }
 

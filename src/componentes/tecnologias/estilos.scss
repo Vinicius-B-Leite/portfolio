@@ -1,23 +1,25 @@
 @import '../config/estilo.scss';
 
 .tecnologias{
-    padding: 3rem;
     background-color: $preto2;
     .conteiner{
         display: flex;
         justify-content: space-between;
         .tecnologias-grid{
+            width: 50%;
             display: grid;
-            grid-template-columns: 10rem 10rem 10rem;
-            grid-template-rows: 10rem 10rem;
+            grid-template-columns: repeat(auto-fit, 10rem) ;
+            grid-template-rows: repeat(auto-fit, 10rem);
             gap: 3rem;
+            box-sizing: border-box;
+            justify-content: center;
             .card{
                 background-color: $preto3;
                 border-radius: 1rem;
                 padding: 1rem;
                 box-shadow: .3rem .3rem 2rem $azul;
                 filter: brightness(50%);
-                img{
+                img{               
                     width: 100%;
                     height: 100%;
                 }
@@ -30,7 +32,9 @@
         }
         .descricao{
             width: 50%;
+            padding: 0 1rem;
             color:$branco;
+            text-align: center;
             h3{
                 font-size: 3rem;
                 padding-bottom: 1rem;
@@ -49,4 +53,21 @@
         height: .2rem;
         margin-top: 5rem;
     }
+
+     @media screen and (max-width: 1150px) {
+        .conteiner{
+            flex-wrap: wrap;
+            padding: 3rem 1rem;
+            .tecnologias-grid{
+                width: 100%;
+            }
+            .descricao{
+                width: 100%;
+                h3{
+                    padding-top: 2rem;
+                }
+            }
+        }
+     }
+
 }

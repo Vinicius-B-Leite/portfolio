@@ -2,8 +2,9 @@
 
 .rodape{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
     padding: 2rem;
 
@@ -14,12 +15,18 @@
     }
     ul{
         list-style: none;
+        padding-bottom: 2rem;
         li{
             padding: .5rem;
             font-size: 1.2rem;
+            text-align: center;
             a{
                 color: $branco;
             }
         }
+    }
+
+    @media screen  and (max-width: 730px){
+        flex-direction: column;
     }
 }

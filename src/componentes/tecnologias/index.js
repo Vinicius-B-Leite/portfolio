@@ -11,31 +11,31 @@ export default function Tecnologias(){
     const tecnologias = [
         {
             nome: 'HTML',
-            descricao: 'html',
+            descricao: 'lembrar de colocar texto do html',
             imagem: html
         },
         {
             nome: 'CSS',
-            descricao: 'css',
+            descricao: 'lembrar de colocar texto do css',
             imagem: css
         },
         {
             nome: 'JavaScript',
-            descricao: 'js',
+            descricao: 'lembrar de colocar texto do js',
             imagem: js
         },
         {
             nome: 'Sass',
-            descricao: 'sass',
+            descricao: 'lembrar de colocar texto do sass',
             imagem: sass
         },
         {
             nome: 'React',
-            descricao: 'react',
+            descricao: 'lembrar de colocar texto do react',
             imagem: react
         }
     ]
-    const [mostrarDescricao, setMostrarDescricao] = useState()
+    const [qualDescricao, setQualDescricao] = useState()
     return(
         <section className="tecnologias">
             <div class="conteiner">
@@ -45,7 +45,7 @@ export default function Tecnologias(){
                             <div className="card"
                              key={tecnologia.nome}
                              onMouseEnter={()=>{
-                                setMostrarDescricao(index)
+                                setQualDescricao(index)
                              }}>
                                 <img src={tecnologia.imagem}/>
                             </div>
@@ -55,9 +55,9 @@ export default function Tecnologias(){
                     
                 </div>
                 <div className="descricao">
-                    <h3>Tecnologia</h3>
-                    <p>{mostrarDescricao >= 0 ?
-                         tecnologias[mostrarDescricao].descricao 
+                    <h3>{qualDescricao  >= 0 ? tecnologias[qualDescricao].nome : "Tecnologia"}</h3>
+                    <p>{qualDescricao >= 0 ?
+                         tecnologias[qualDescricao].descricao 
                          :
                         'Clique ou passe o mouse por cima de uma tecnologia' }</p>
                 </div>

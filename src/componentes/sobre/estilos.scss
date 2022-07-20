@@ -13,7 +13,6 @@
     }
     .conteiner{
         display: flex;
-        flex-direction: row;
         justify-content: space-evenly;
         .sobre-opcoes{
             ul{
@@ -24,12 +23,13 @@
                     cursor: pointer;
                     color: $cinza;
                     span{
+                        display: flex;
                         font-size: 2rem;
                         color: $cinza;
                     }
                     .linha{
                         width: 1rem;
-                        height: 2.5rem;
+                        height: 100%;
                         background-color: $azul;
                         margin-right: 1rem;
                     }
@@ -54,6 +54,43 @@
             font-size: 1.3rem;
             line-height: 2rem;
             text-align: justify;
+        }
+    }
+
+    @media screen and (max-width: 1060px) {
+        .conteiner{
+            padding: 3rem 2rem;
+        }
+    }
+
+    
+    @media screen and (max-width: 995px) {
+        .conteiner{
+            li{
+                padding: 1rem;
+            }
+        } 
+    }
+
+    @media screen and (max-width: 700px) {
+        .conteiner{
+            flex-wrap: wrap;
+            .sobre-opcoes{
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
+            .sobre-descricao{
+                width: 100%;
+            }
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .conteiner{
+            .sobre-descricao{
+                padding: 0;
+            }
         }
     }
 }
