@@ -27,15 +27,14 @@ export default function Sobre(){
                 <div className='sobre-opcoes'>
                     <ul>
                         {informacoes.map((informacao, index) => {
-                            return <>
-                                    <li key={informacao} onClick={()=> {
+                            return (
+                                    <li key={informacao.titulo} onClick={()=> {
                                         setMostrarQual(index)
                                         setAtivado(true)}
                                         }>
                                         <div className={ativado && index === mostrarQual ? "linha ativado" : "linha"}></div>
                                         <span className={ativado && index === mostrarQual ? "titulo-ativado" : ''}>{informacao.titulo}</span>
-                                    </li>
-                                </>
+                                    </li>)
                             
                         })}
                     </ul>

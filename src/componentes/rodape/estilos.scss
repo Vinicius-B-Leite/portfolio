@@ -1,0 +1,25 @@
+@import '../config/estilo.scss';
+
+.rodape{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 2rem;
+
+    background-color: $preto2;
+    color: $branco;
+    h1{
+        font-size: 2.5rem;
+    }
+    ul{
+        list-style: none;
+        li{
+            padding: .5rem;
+            font-size: 1.2rem;
+            a{
+                color: $branco;
+            }
+        }
+    }
+}
