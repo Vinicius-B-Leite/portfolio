@@ -1,0 +1,13 @@
+@import '../config/estilo.scss';
+
+
+.botaoSimples {
+    background-color: $preto2;
+    color: $azul;
+    font-size: 1rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+    font-weight: 400;
+}

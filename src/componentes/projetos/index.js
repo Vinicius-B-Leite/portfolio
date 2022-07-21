@@ -1,65 +1,50 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './estilos.scss'
 import salaoVanyBuavaLogo from '../../assets/projetos/vanylogo.jpeg'
 import blAcademiaLogo from '../../assets/projetos/blacademia.png'
 import portFolioLogo from '../../assets/projetos/portfolio.png'
-import embreve from '../../assets/projetos/embreve.png'
-import BotaoVazado from '../botaoVazado'
+import BotaoSimples from '../botaoSimples'
 
 export default function Projetos(){
     const projetos = [
         {
             titulo: 'Salão Vany Buava',
-            ano: 2022,
+            descricao: <p>[Em desenvolimento] <br/> Este projeto foi feito para um salão de beleza da cidade em que eu moro e também foi a minha primeira oportunidade como freelancer <br/> HTML | CSS | JavaScript</p>,
             imagemFundo: salaoVanyBuavaLogo,
-            link: 'https://salaovanybuava.netlify.app/'
+            link: 'https://salaovanybuava.netlify.app/',
+            github: 'https://github.com/Vinicius-B-Leite/salao-vany-buava'
         },
         {
             titulo: 'BL Academia',
-            ano: 2022,
+            descricao: <p>Projeto de estudo para aplicar os conhecimentos de responsividade adiquiridos no curso da Alura <br/> HTML | CSS</p>,
             imagemFundo: blAcademiaLogo,
-            link: 'https://blacademia.netlify.app/'
+            link: 'https://blacademia.netlify.app/',
+            github: 'https://github.com/Vinicius-B-Leite/Projeto-BL-academia'
         },
         {
-            titulo: 'Portfolio',
-            ano: 2022,
+            titulo: 'Portfólio pessoal',
+            descricao: <p>No meu portfolio apliquei meus primeiros conhecimentos em ReactJS</p>,
             imagemFundo: portFolioLogo,
-            link: ''
-        },
-        {
-            titulo: 'Em breve',
-            ano: '??',
-            imagemFundo: embreve,
-            link: ''
+            link: 'https://viniciusbleite-portfolio.netlify.app',
+            github: 'https://github.com/Vinicius-B-Leite/portfolio'
         }
     ]
 
-    var [limite, setLimite] = useState(2)
     return(
         <section className='projetos'>
-            <div className="conteiner">
-                <h2>Projetos</h2>
-                <div className='caixa'>
-                    {projetos.map((projeto, index) => {
-                        return(
-                            <div
-                             className='caixa-items'
-                             onClick={() => window.open(projeto.link, "_blank")}
-                             key={projeto.titulo} 
-                             id={(projetos.length -1) > limite && index >= limite + 1 ? 'esconder' : ''}
-                             style={index % 2 != 0 ? {flexDirection: 'row-reverse'} : {flexDirection:  'row'}}>
-                                <img src={projeto.imagemFundo} alt={`imagem do projeto ${projeto.titulo}`}/>
-                                <h3>{projeto.titulo}</h3>
-                                <h3>{projeto.ano}</h3>
-                            </div>
-                            )
-                    })}
-                </div>
-                <BotaoVazado onClick={
-                    () => limite <= 2 ? setLimite(() => limite += projetos.length - limite) : setLimite(() => limite -= 1)
-                    }>
-                        {limite > 2 ? "Ver menos" : "Ver mais"}
-                </BotaoVazado>
+            <h2>Projetos</h2>
+            <div className="flex">
+                {projetos.map(projeto => {
+                    return(
+                        <div className='card' key={projeto.titulo}>
+                            <img src={projeto.imagemFundo} alt={projeto.titulo}/>
+                            <h2>{projeto.titulo}</h2>
+                            {projeto.descricao}
+                            <BotaoSimples className="botao-projeto" link={projeto.github}>Github</BotaoSimples>
+                            <BotaoSimples className="botao-projeto-inverso" link={projeto.link}>Abrir</BotaoSimples>
+                        </div>
+                    )
+                })}
             </div>
         </section>
     )

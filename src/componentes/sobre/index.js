@@ -5,11 +5,11 @@ export default function Sobre(){
     const informacoes = [
         {
             titulo: 'Minha história',
-            descricao: 'Eu sou um garoto de 16 anos e sou apaixonado por programação, animais e musculação. Descobri minha paixão em criar programas aos 13 anos quando meu irmão mais velho me aconselhava a estudar isso e que seria a profissão do futuro. Nesta época eu não levava muito a sério os estudos, pois queria programar somente para fazer hack de joguinhos, mas depois de entrar na Etec (ensino médio com técnico) me encontrei na programação web e desde então venho dando o meu melhor nos estudos para atingir meus objetivos.'
+            descricao: 'Eu sou um garoto de 16 anos e sou apaixonado por programação, animais e musculação. Descobri minha paixão nesta área aos 13 anos quando meu irmão mais velho me aconselhava a estudar sobre a profissão do futuro. Nesta época eu não levava muito a sério os estudos, pois queria programar somente para fazer hack de joguinhos, mas depois de entrar na Etec (ensino médio com técnico) me encontrei na programação web e desde então venho dando o meu melhor nos estudos para atingir meus objetivos.'
         },
         {
             titulo: 'Meus objetivos',
-            descricao: 'Pensando em longo prazo, meu maior objetivo é atingir a independência financeira através de investimento e um possível empreendedorismo. Mas para agora quero aprimorar meus conhecimentos em programação para agregar um valor maior na empresas e, consequentemente, na vida das pessoas. Para que isso aconteça tenho que sempre estar estudando e me tornando a minha melhor versão. Um desejo que eu tenho, além de conquistar uma oportunidade, é fazer o curso Full Stack do Programador Br para aprender mais e conquistar os meus objetivos já falados.'
+            descricao: 'Além da programação, desejo começar a investir o quanto antes e, talvez, empreender no futuro. Mas por agora quero aprimorar meus conhecimentos em programação para agregar um valor maior na empresas e, consequentemente, nas vidas das pessoas. Para que isso aconteça tenho que sempre estar estudando e me tornar minha melhor versão. Uma outra meta que eu tenho, além de conquistar uma oportunidade, é fazer o curso Full Stack do Programador Br para evoluir ainda mais.'
         },
         {
             titulo: '😃😃',
