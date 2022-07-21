@@ -3,10 +3,9 @@
 .projetos{
     background-color: $preto3;
     width: 100%;
-    box-sizing: border-box;
     padding: 2rem;
 
-    h2{
+    .projeto-titulo{
         font-size: 2rem;
         text-align: center;
         color: $branco;
@@ -23,29 +22,33 @@
             display: grid;
             grid-template-columns: repeat(2, 11rem);
             grid-template-rows: 14rem 4rem 9rem 3rem;
-            box-sizing: border-box;
             color: $branco;    
             padding: 1rem;
     
-            img{
+            .card-img{
                 grid-column: span 2;
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
 
-            h2{
+            .card-legenda{
                 grid-column: span 2;
-                font-size: 1.5rem;
-                align-self: center;
+                grid-row: span 2;
+                .legenda-titulo{
+                    font-size: 1.5rem;
+                    text-align: center;
+                    line-height: 2rem;
+                }
+    
+                .legenda-paragrafo{
+                    grid-column: span 2;
+                    text-align: justify;
+                    font-size: 1.2rem;
+                    line-height: 1.3rem;
+                }
             }
-
-            p{
-                grid-column: span 2;
-                text-align: justify;
-                font-size: 1.2rem;
-                line-height: 1.3rem;
-            }
+            
 
             .botao-projeto{
                width: 90%;

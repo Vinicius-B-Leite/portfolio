@@ -5,7 +5,7 @@
     height: auto;
     background-color: $preto2;
     padding: 2rem 0;
-    h2{
+    .titulo-sobre{
         color: $branco;
         text-align: center;
         font-size: 1.8rem;
@@ -20,28 +20,35 @@
                 li{
                     padding: 2rem;
                     display: flex;
-                    cursor: pointer;
                     color: $cinza;
-                    span{
+                    .opcao{
+                        border: 0;
+                        background: none;
                         display: flex;
-                        font-size: 2rem;
-                        color: $cinza;
-                    }
-                    .linha{
-                        width: 1rem;
-                        height: 100%;
-                        background-color: $azul;
-                        margin-right: 1rem;
+                        cursor: pointer;
+                        .linha{
+                            width: 1rem;
+                            height: 100%;
+                            background-color: $azul;
+                            margin-right: 1rem;
+                        }
+                        .opcao-titulo{
+                            font-size: 2rem;
+                            color: $cinza;
+                        }
+                        
                     }
 
-                    .linha.ativado{
-                        background-color: $azul-claro;
-                        box-shadow: 0 0 1rem  .5rem $azul-claro;
-                        transition: .5s;
-                    }
-                    .titulo-ativado{
-                        color: $branco;
-                        transition: .5s;
+                    .opcao.ativada{
+                        .linha.ativada{
+                            background-color: $azul-claro;
+                            box-shadow: 0 0 1rem  .5rem $azul-claro;
+                            transition: .5s;
+                        }
+                        .opcao-titulo.ativado{
+                            color: $branco;
+                            transition: .5s;
+                        }
                     }
                 }
             }

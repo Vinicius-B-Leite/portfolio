@@ -22,18 +22,20 @@ export default function Sobre(){
     const [ativado, setAtivado] = useState(false)
     return(
         <section className='sobre'>
-            <h2>Sobre</h2>
+            <h2 className='titulo-sobre'>Sobre</h2>
             <div className="conteiner">
                 <div className='sobre-opcoes'>
                     <ul>
                         {informacoes.map((informacao, index) => {
                             return (
-                                    <li key={informacao.titulo} onClick={()=> {
-                                        setMostrarQual(index)
-                                        setAtivado(true)}
-                                        }>
-                                        
-                                        <span className={ativado && index === mostrarQual ? "titulo-ativado" : ''}><div className={ativado && index === mostrarQual ? "linha ativado" : "linha"}></div>{informacao.titulo}</span>
+                                    <li key={informacao.titulo}>
+                                        <button className={ativado && index === mostrarQual? 'opcao ativada' : 'opcao'} onClick={()=> {
+                                            setMostrarQual(index)
+                                            setAtivado(true)}
+                                            }>
+                                            <div className={ativado && index === mostrarQual? 'linha ativada' : "linha"}></div>
+                                            <span className={ativado && index === mostrarQual? 'opcao-titulo ativado' : 'opcao-titulo'}>{informacao.titulo}</span>
+                                        </button>
                                     </li>)
                             
                         })}

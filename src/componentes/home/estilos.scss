@@ -3,12 +3,15 @@
 
 .hero {
     width: 100%;
-    height: 100vh;
+    padding-bottom: 2rem;
     background-color: $preto;
     color: $branco;
-    box-sizing: border-box;
-
-    h3 {
+    .pularNavegação{
+        position: absolute;
+        left: -999px;
+        opacity: 0;
+    }
+    .scrool-down {
         text-align: center;
         font-size: 1.4rem;
         margin-top: .5rem;
@@ -25,7 +28,6 @@
     .hero-detalhes {
         width: 50%;
         padding: 3rem 2rem;
-        box-sizing: border-box;
 
         .titulo-animado {
             font-size: 6rem;
@@ -56,9 +58,9 @@
             text-align: center;
         }
 
-        h2 {
-            padding-left: 12rem;
+        .saudacao {
             padding-top: 2rem;
+            text-align: center;
         }
 
         .conteiner-botao {
@@ -71,11 +73,11 @@
 
 
     @media screen and (max-width: 1500px) {
-        h3{
+        .scrool-down{
             margin-top: 0;
         }
         .hero-detalhes{
-            h2{
+            .saudacao{
                 padding-top: .5rem;
             }
             .profissao{
@@ -88,10 +90,6 @@
     @media screen and (max-width: 1195px) {
         .hero-detalhes {
             width: 100%;
-            h2{
-                padding-left: 0;
-                text-align: center;
-            }
         }
     }
 
@@ -100,7 +98,7 @@
             padding: .5rem;
         }
 
-        h3{
+        .scrool-down{
             padding-top: 2rem;
         }
     }
@@ -114,14 +112,14 @@
                 
             }
 
-            h2 {
+            .saudacao {
                 line-height: 3rem;
             }
         }
     }
 
     @media screen and (max-width: 560px) {
-        h3{
+        .scrool-down{
             display: none;
         }
     }

@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.89f92c3a.css",
-    "main.js": "/static/js/main.3204c84c.js",
+    "main.css": "/static/css/main.fff9e1a2.css",
+    "main.js": "/static/js/main.b25796b5.js",
     "static/js/787.ce83f9e4.chunk.js": "/static/js/787.ce83f9e4.chunk.js",
     "static/media/blacademia.png": "/static/media/blacademia.eb7b399ac81f684b5f44.png",
     "static/media/sass-removebg-preview.png": "/static/media/sass-removebg-preview.6b34b799bbd8c54d4c0d.png",
+    "static/media/css-removebg-preview.png": "/static/media/css-removebg-preview.49dfea4216e6471cbef1.png",
+    "static/media/portfolio.png": "/static/media/portfolio.630890bcf7fd94f061a0.png",
     "static/media/html-removebg-preview.png": "/static/media/html-removebg-preview.49cd4687e2a99c0fd3ce.png",
-    "static/media/css-removebg-preview.png": "/static/media/css-removebg-preview.1bc768d89200222b3a58.png",
     "static/media/vanylogo.jpeg": "/static/media/vanylogo.2d55c599649fe16864cf.jpeg",
     "static/media/react-removebg-preview.png": "/static/media/react-removebg-preview.0ccca8f4f26297c6e2cd.png",
-    "static/media/portfolio.png": "/static/media/portfolio.13cab25d1f695cfbf278.png",
     "static/media/js.jpg": "/static/media/js.e717b89c19d01004b4dc.jpg",
     "index.html": "/index.html",
-    "main.89f92c3a.css.map": "/static/css/main.89f92c3a.css.map",
-    "main.3204c84c.js.map": "/static/js/main.3204c84c.js.map",
+    "main.fff9e1a2.css.map": "/static/css/main.fff9e1a2.css.map",
+    "main.b25796b5.js.map": "/static/js/main.b25796b5.js.map",
     "787.ce83f9e4.chunk.js.map": "/static/js/787.ce83f9e4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.89f92c3a.css",
-    "static/js/main.3204c84c.js"
+    "static/css/main.fff9e1a2.css",
+    "static/js/main.b25796b5.js"
   ]
 }

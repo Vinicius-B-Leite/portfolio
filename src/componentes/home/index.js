@@ -7,20 +7,21 @@ import BotaoGradiente from '../botaoGradiente';
 import BotaoVazado from '../botaoVazado';
 
 
-export default function Home(){
+export default function Home(props){
     return(
-            <div className='hero'>
-                <NavBar/>   
-                <div className="hero-detalhes">
-                    <h2>Eae, eu sou o </h2>
+            <main className='hero'>
+                <a className='pularNavegação' href='#hero-detalhes'>Pular para o conteúdo principal</a>
+                <NavBar logo={props.logo}/>   
+                <div className="hero-detalhes" id='hero-detalhes'>
+                    <h2 className='saudacao'>Eae, eu sou o </h2>
                     <h1 className='titulo-animado'>Vinicius B.  Leite</h1>
-                    <h2 className='profissao'>Desenvolvedor Front-end e futuro Full-Stack</h2>
+                    <h2 className='profissao'>Desenvolvedor <span lang='en'>Front-end</span> e futuro <span lang='en'>Full-Stack</span></h2>
                     <div className="conteiner-botao">
                         <BotaoGradiente link="https://github.com/Vinicius-B-Leite">Git Hub</BotaoGradiente>
                         <BotaoVazado link="https://github.com/Vinicius-B-Leite">LinkedIn</BotaoVazado>
                     </div>
                 </div>
-                <h3>Scroll Down <FontAwesomeIcon icon={faArrowDown} className="icon"/> </h3>
-            </div>
+                <h3 className='scrool-down' lang='en'>Scroll Down <FontAwesomeIcon icon={faArrowDown} className="icon"/> </h3>
+            </main>
     )
 }

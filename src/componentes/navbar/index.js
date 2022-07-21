@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 import './estilos.scss'
 
-export default function NavBar(){
+export default function NavBar(props){
     const [mostrar, setMostrar] = useState(false)
-
     return(
         <header>
-            <h1> BL Original</h1>
+            <h1>{props.logo}</h1>
             <nav id={mostrar ? 'mostrar' : ''}>
                 <div className='menu-hamburg' onClick={() => setMostrar(!mostrar)}>
                     <div className='um'></div>

@@ -6,13 +6,14 @@ import Tecnologias from './componentes/tecnologias';
 
 
 function App() {
+  const logo = '< V B L />'
   return (
     <>
-      <Home/>
+      <Home logo={logo}/>
       <Sobre/>
       <Projetos />
       <Tecnologias/>
-      <Rodape/>
+      <Rodape logo={logo}/>
     </>
   );
 }

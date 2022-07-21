@@ -1,11 +1,10 @@
 import React from "react";
 import './estilos.scss';
 
-export default function Rodape(){
-
+export default function Rodape(props){
     return(
         <footer className="rodape">
-            <h1>BL Original</h1>
+            <h2 className="rodape-titulo">{props.logo}</h2>
             <ul>
                 <li>Home</li>
                 <li>Sobre</li>

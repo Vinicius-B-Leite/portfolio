@@ -136,13 +136,16 @@ header {
             }
         }
     }
+}
 
-    @media screen and (max-width: 360px) {
+@media screen and (max-width: 370px) {
+    header{
+        padding: 1rem;
         nav#mostrar{
             .menu-hamburg{
                 top: 4.5rem;
             }
-
+    
         }
     }
 }

@@ -41,21 +41,19 @@ export default function Tecnologias(){
                 <div className="tecnologias-grid">
                     {tecnologias.map((tecnologia, index) => {
                         return (
-                            <div className="card"
+                            <button className="card"
                              key={tecnologia.nome}
-                             onMouseEnter={()=>{
-                                setQualDescricao(index)
-                             }}>
-                                <img src={tecnologia.imagem} alt={tecnologia.nome}/>
-                            </div>
+                             onMouseEnter={()=>setQualDescricao(index)} onClick={()=>setQualDescricao(index)}>
+                                <img className="card-img" src={tecnologia.imagem} alt={tecnologia.nome}/>
+                            </button>
 
                         )
                     })}
                     
                 </div>
                 <div className="descricao">
-                    <h3>{qualDescricao  >= 0 ? tecnologias[qualDescricao].nome : "Tecnologia"}</h3>
-                    <p>{qualDescricao >= 0 ?
+                    <h3 className="descricao-titulo">{qualDescricao  >= 0 ? tecnologias[qualDescricao].nome : "Tecnologia"}</h3>
+                    <p className="descricao-desc">{qualDescricao >= 0 ?
                          tecnologias[qualDescricao].descricao 
                          :
                         'Clique ou passe o mouse por cima de uma tecnologia' }</p>
