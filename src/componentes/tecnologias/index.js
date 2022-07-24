@@ -10,27 +10,27 @@ export default function Tecnologias(){
     const tecnologias = [
         {
             nome: 'HTML',
-            descricao: 'Esta linguagem de programação é a porta de entrada para muitas pessoas neste mundo como foi para mim também. Eu zelo pela acessibilidade e pela semântica em meus projetos. ',
+            descricao: 'Esta linguagem de programação é a porta de entrada para muitas pessoas neste mundo, como foi para mim, também. Eu zelo pela acessibilidade e pela semântica em meus projetos.',
             imagem: html
         },
         {
             nome: 'CSS',
-            descricao: 'O CSS é de longe o meu favorito da triade do front-end, pois é nele em que deixamos as páginas bonitas e glamurosas, assim podendo chamar mais ou menos atenção do público. É nele também que nós, programadores, criamos interfaces que se adaptam a qualquer dispostivo.',
+            descricao: 'O CSS é, de longe, o meu favorito da triade do front-end, pois é nele em que deixamos as páginas bonitas e glamurosas, assim podendo chamar mais ou menos atenção do público. É nele, também, que nós, programadores, criamos interfaces que se adaptam a qualquer dispostivo.',
             imagem: css
         },
         {
             nome: 'JavaScript',
-            descricao: 'O JavaScript é o cérebro da nossa aplicação, contendo toda a interatividade com o usuário e funções do nosso site. Sinceramente, eu tenho um carinho muito grande por essa linguagem de programação, porque somente com ela é possível programar para o front, back e mobile(android ou ios). Esta é a enorme vantagem dela, reaproveitar os conhecimentos para atingir outras áreas.',
+            descricao: 'O JavaScript é o cérebro da nossa aplicação, contendo toda a interatividade com o usuário e funções do nosso site. Sinceramente, eu tenho um carinho muito grande por essa linguagem de programação, porque com ela é possível programar para o front, back e mobile(android e ios). Esta é a enorme vantagem dela: reaproveitar os conhecimentos para atingir outras áreas.',
             imagem: js
         },
         {
             nome: 'Sass',
-            descricao: 'Com o Sass a agilidade de estilizar as páginas aumento muito. Ele resolveu o meu problema da leitura do CSS que, por muitas vezes, ficam enormes e impossiveis de se compreender. Esta foi a grande sacada para facilitar esta parte do processo e deixar muito mais prazeroso a programação',
+            descricao: 'Com o Sass, a agilidade de estilizar as páginas aumentou muito. Ele resolveu o meu problema da leitura do CSS que, por muitas vezes, ficam enormes e impossíveis de se compreender. Esta foi a grande sacada para facilitar esta parte do processo e deixar muito mais prazerosa a programação.',
             imagem: sass
         },
         {
             nome: 'React',
-            descricao: 'ReactJS é o meu primeiro e único framework front end que eu estudo. Estou no começo nesse mundo novo e estou adorando a facilidade de integrar o HTML com o JavaScript como se fossem um só. Pretendo me aprofundar bastante neste framework e quem sabe me aventurar pelo React Native',
+            descricao: 'ReactJS é o meu primeiro e único framework front end que eu estudo. Estou no começo nesse mundo novo e estou adorando a facilidade de integrar o HTML com o JavaScript como se fossem um só. Pretendo me aprofundar bastante neste framework e, quem sabe, me aventurar pelo React Native.',
             imagem: react
         }
     ]

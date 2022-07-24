@@ -9,7 +9,7 @@ export default function Projetos(){
     const projetos = [
         {
             titulo: 'Salão Vany Buava',
-            descricao: <p  className='legenda-paragrafo'>[Em desenvolimento] <br/> Este projeto foi feito para um salão de beleza da cidade em que eu moro e também foi a minha primeira oportunidade como freelancer <br/> HTML | CSS | JavaScript</p>,
+            descricao: <p  className='legenda-paragrafo'>[Em desenvolimento] <br/> Este projeto foi feito para um salão de beleza da cidade em que eu moro, e também foi a minha primeira oportunidade como freelancer. <br/> HTML | CSS | JavaScript</p>,
             imagemFundo: salaoVanyBuavaLogo,
             link: 'https://salaovanybuava.netlify.app/',
             github: 'https://github.com/Vinicius-B-Leite/salao-vany-buava'
@@ -23,7 +23,7 @@ export default function Projetos(){
         },
         {
             titulo: 'Portfólio pessoal',
-            descricao: <p className='legenda-paragrafo'>No meu portfolio apliquei meus primeiros conhecimentos em ReactJS</p>,
+            descricao: <p className='legenda-paragrafo'>No meu portfólio, apliquei meus primeiros conhecimentos em ReactJS.</p>,
             imagemFundo: portFolioLogo,
             link: 'https://viniciusbleite-portfolio.netlify.app',
             github: 'https://github.com/Vinicius-B-Leite/portfolio'

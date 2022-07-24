@@ -18,7 +18,7 @@ export default function Home(props){
                     <h2 className='profissao'>Desenvolvedor <span lang='en'>Front-end</span> e futuro <span lang='en'>Full-Stack</span></h2>
                     <div className="conteiner-botao">
                         <BotaoGradiente link="https://github.com/Vinicius-B-Leite">Git Hub</BotaoGradiente>
-                        <BotaoVazado link="https://github.com/Vinicius-B-Leite">LinkedIn</BotaoVazado>
+                        <BotaoVazado link="https://www.linkedin.com/in/vinicius-leite-9369b9245/">LinkedIn</BotaoVazado>
                     </div>
                 </div>
                 <h3 className='scrool-down' lang='en'>Scroll Down <FontAwesomeIcon icon={faArrowDown} className="icon"/> </h3>
