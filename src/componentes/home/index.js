@@ -9,7 +9,7 @@ import BotaoVazado from '../botaoVazado';
 
 export default function Home(props){
     return(
-            <main className='hero'>
+            <main className='hero' id='home'>
                 <a className='pularNavegação' href='#hero-detalhes'>Pular para o conteúdo principal</a>
                 <NavBar logo={props.logo}/>   
                 <div className="hero-detalhes" id='hero-detalhes'>

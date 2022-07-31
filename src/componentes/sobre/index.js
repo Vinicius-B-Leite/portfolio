@@ -21,7 +21,7 @@ export default function Sobre(){
     const [mostrarQual, setMostrarQual] = useState()
     const [ativado, setAtivado] = useState(false)
     return(
-        <section className='sobre'>
+        <section className='sobre' id="sobre">
             <h2 className='titulo-sobre'>Sobre</h2>
             <div className="conteiner">
                 <div className='sobre-opcoes'>

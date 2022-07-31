@@ -31,7 +31,7 @@ export default function Projetos(){
     ]
 
     return(
-        <section className='projetos'>
+        <section className='projetos' id="projetos">
             <h2 className='projeto-titulo'>Projetos</h2>
             <div className="flex">
                 {projetos.map(projeto => {

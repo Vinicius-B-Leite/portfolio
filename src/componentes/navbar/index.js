@@ -2,6 +2,25 @@ import React, { useState } from 'react'
 import './estilos.scss'
 
 export default function NavBar(props){
+
+    const links = [
+        {
+            para: '#home',
+            nome: 'Home'
+        },
+        {
+            para: '#sobre',
+            nome: 'Sobre'
+        },
+        {
+            para: '#projetos',
+            nome: 'Projetos'
+        },
+        {
+            para: '#tecnologias',
+            nome: 'Tecnologias'
+        }
+    ]
     const [mostrar, setMostrar] = useState(false)
     return(
         <header>
@@ -13,10 +32,11 @@ export default function NavBar(props){
                     <div className='tres'></div>
                 </div>
                 <ul >
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Projetos</a></li>
-                    <li><a href="">Tecnologias</a></li>
+                    {
+                        links.map(link => {
+                            return <li key={link.nome}><a onClick={() => setMostrar(false)} href={link.para}>{link.nome}</a></li>
+                        })
+                    }
                 </ul>
             </nav>
         </header>

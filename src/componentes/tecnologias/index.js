@@ -36,7 +36,7 @@ export default function Tecnologias(){
     ]
     const [qualDescricao, setQualDescricao] = useState()
     return(
-        <section className="tecnologias">
+        <section className="tecnologias" id="tecnologias">
             <div className="conteiner">
                 <div className="tecnologias-grid">
                     {tecnologias.map((tecnologia, index) => {
