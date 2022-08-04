@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.3e4be72c.css",
-    "main.js": "/static/js/main.26ec477e.js",
+    "main.js": "/static/js/main.13165bd0.js",
     "static/media/blacademia.png": "/static/media/blacademia.eb7b399ac81f684b5f44.png",
     "static/media/sass-removebg-preview.png": "/static/media/sass-removebg-preview.6b34b799bbd8c54d4c0d.png",
+    "static/media/alurastudies.png": "/static/media/alurastudies.181c0332d25d59e80cc7.png",
     "static/media/css-removebg-preview.png": "/static/media/css-removebg-preview.49dfea4216e6471cbef1.png",
     "static/media/portfolio.png": "/static/media/portfolio.630890bcf7fd94f061a0.png",
     "static/media/html-removebg-preview.png": "/static/media/html-removebg-preview.49cd4687e2a99c0fd3ce.png",
@@ -12,10 +13,10 @@
     "static/media/js.jpg": "/static/media/js.e717b89c19d01004b4dc.jpg",
     "index.html": "/index.html",
     "main.3e4be72c.css.map": "/static/css/main.3e4be72c.css.map",
-    "main.26ec477e.js.map": "/static/js/main.26ec477e.js.map"
+    "main.13165bd0.js.map": "/static/js/main.13165bd0.js.map"
   },
   "entrypoints": [
     "static/css/main.3e4be72c.css",
-    "static/js/main.26ec477e.js"
+    "static/js/main.13165bd0.js"
   ]
 }
