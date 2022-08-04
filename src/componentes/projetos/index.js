@@ -3,6 +3,7 @@ import './estilos.scss'
 import salaoVanyBuavaLogo from '../../assets/projetos/vanylogo.jpeg'
 import blAcademiaLogo from '../../assets/projetos/blacademia.png'
 import portFolioLogo from '../../assets/projetos/portfolio.png'
+import aluraStudies from '../../assets/projetos/alurastudies.png'
 import BotaoSimples from '../botaoSimples'
 
 export default function Projetos(){
@@ -27,6 +28,13 @@ export default function Projetos(){
             imagemFundo: portFolioLogo,
             link: 'https://viniciusbleite-portfolio.netlify.app',
             github: 'https://github.com/Vinicius-B-Leite/portfolio'
+        },
+        {
+            titulo: 'Alura Studies',
+            descricao: <p className='legenda-paragrafo'>Neste projeto da Alura aprendi a utilizar o TypeScript no React <br/>HTML | CSS | TypeScript | React</p>,
+            imagemFundo: aluraStudies,
+            link: 'https://alura-studies-typescript.netlify.app/',
+            github: 'https://github.com/Vinicius-B-Leite/alura-studies'
         }
     ]
 

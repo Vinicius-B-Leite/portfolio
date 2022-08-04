@@ -1,0 +1,19 @@
+.conteiner {
+  padding: 3rem 4rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.botao-gradiente {
+  color: #FFFFFFFF;
+  border: none;
+  background: -webkit-gradient(linear, left top, right top, from(#2f71e8ff), to(#29b9f0));
+  background: linear-gradient(90deg, #2f71e8ff, #29b9f0);
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1.3rem 1rem 1rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+/*# sourceMappingURL=estilos.css.map */

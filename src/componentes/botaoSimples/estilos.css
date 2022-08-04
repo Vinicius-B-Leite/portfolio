@@ -1,0 +1,17 @@
+.conteiner {
+  padding: 3rem 4rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.botaoSimples {
+  background-color: #000000;
+  color: #2f71e8ff;
+  font-size: 1rem;
+  border-radius: .3rem;
+  cursor: pointer;
+  text-align: center;
+  border: 0;
+  font-weight: 400;
+}
+/*# sourceMappingURL=estilos.css.map */

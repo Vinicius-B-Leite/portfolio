@@ -1,0 +1,185 @@
+@charset "UTF-8";
+.conteiner {
+  padding: 3rem 4rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hero {
+  width: 100%;
+  padding-bottom: 2rem;
+  background-color: #111213ff;
+  color: #FFFFFFFF;
+}
+
+.hero .pularNavegação {
+  position: absolute;
+  left: -999px;
+  opacity: 0;
+}
+
+.hero .scrool-down {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: .5rem;
+}
+
+.hero .scrool-down .icon {
+  font-size: 1.4rem;
+  -webkit-animation: flexinha 1.5s ease-in-out 0s infinite;
+          animation: flexinha 1.5s ease-in-out 0s infinite;
+  background: -webkit-linear-gradient(#2f71e8ff, #29b9f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero .hero-detalhes {
+  width: 50%;
+  padding: 3rem 2rem;
+}
+
+.hero .hero-detalhes .titulo-animado {
+  font-size: 6rem;
+  word-spacing: 1rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.hero .hero-detalhes .titulo-animado::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 0.5rem solid #29b9f0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  -webkit-animation: digitacao 1.5s steps(17) forwards, piscar 1s 1.5s infinite;
+          animation: digitacao 1.5s steps(17) forwards, piscar 1s 1.5s infinite;
+  background-color: #111213ff;
+}
+
+.hero .hero-detalhes .profissao {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  padding-left: 0;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.hero .hero-detalhes .saudacao {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.hero .hero-detalhes .conteiner-botao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  z-index: 5;
+}
+
+@media screen and (max-width: 1500px) {
+  .hero .scrool-down {
+    margin-top: 0;
+  }
+  .hero .hero-detalhes .saudacao {
+    padding-top: .5rem;
+  }
+  .hero .hero-detalhes .profissao {
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 1195px) {
+  .hero .hero-detalhes {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .hero .hero-detalhes {
+    padding: .5rem;
+  }
+  .hero .scrool-down {
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 372px) {
+  .hero .hero-detalhes .titulo-animado {
+    font-size: 5rem;
+  }
+  .hero .hero-detalhes .saudacao {
+    line-height: 3rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .hero .scrool-down {
+    display: none;
+  }
+}
+
+@-webkit-keyframes flexinha {
+  from {
+    -webkit-transform: translateY(-0.3rem);
+            transform: translateY(-0.3rem);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@keyframes flexinha {
+  from {
+    -webkit-transform: translateY(-0.3rem);
+            transform: translateY(-0.3rem);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes digitacao {
+  100% {
+    left: 100%;
+    margin: 0 -1rem 0 -1rem;
+  }
+}
+
+@keyframes digitacao {
+  100% {
+    left: 100%;
+    margin: 0 -1rem 0 -1rem;
+  }
+}
+
+@-webkit-keyframes piscar {
+  to {
+    opacity: 1;
+  }
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes piscar {
+  to {
+    opacity: 1;
+  }
+  from {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

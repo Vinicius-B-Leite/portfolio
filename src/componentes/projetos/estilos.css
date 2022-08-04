@@ -1,0 +1,77 @@
+.conteiner {
+  padding: 3rem 4rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.projetos {
+  background-color: #0b0b0b;
+  width: 100%;
+  padding: 2rem;
+}
+
+.projetos .projeto-titulo {
+  font-size: 2rem;
+  text-align: center;
+  color: #FFFFFFFF;
+  padding-bottom: 1rem;
+}
+
+.projetos .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 2rem;
+}
+
+.projetos .flex .card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (11rem)[2];
+      grid-template-columns: repeat(2, 11rem);
+  -ms-grid-rows: 14rem 4rem 9rem 3rem;
+      grid-template-rows: 14rem 4rem 9rem 3rem;
+  color: #FFFFFFFF;
+  padding: 1rem;
+}
+
+.projetos .flex .card .card-img {
+  grid-column: span 2;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.projetos .flex .card .card-legenda {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.projetos .flex .card .card-legenda .legenda-titulo {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.projetos .flex .card .card-legenda .legenda-paragrafo {
+  grid-column: span 2;
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+}
+
+.projetos .flex .card .botao-projeto {
+  width: 90%;
+}
+
+.projetos .flex .card .botao-projeto-inverso {
+  background-color: #2f71e8ff;
+  color: #111213ff;
+}
+/*# sourceMappingURL=estilos.css.map */
