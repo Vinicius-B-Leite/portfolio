@@ -4,6 +4,7 @@ import salaoVanyBuavaLogo from '../../assets/projetos/vanylogo.jpeg'
 import blAcademiaLogo from '../../assets/projetos/blacademia.png'
 import portFolioLogo from '../../assets/projetos/portfolio.png'
 import aluraStudies from '../../assets/projetos/alurastudies.png'
+import pokedex from '../../assets/projetos/pokedex.png'
 import BotaoSimples from '../botaoSimples'
 
 export default function Projetos(){
@@ -35,6 +36,13 @@ export default function Projetos(){
             imagemFundo: aluraStudies,
             link: 'https://alura-studies-typescript.netlify.app/',
             github: 'https://github.com/Vinicius-B-Leite/alura-studies'
+        },
+        {
+            titulo: 'Pokedex',
+            descricao: <p className='legenda-paragrafo'>Este foi o meu primeiro projeto intregado com uma API. Decidi usar o pokeapi.co parra fazer o "Hello, world!" desse up nos meus projetos. <br/> HTML | SCSS | JS | React | Axios</p>,
+            imagemFundo: pokedex,
+            link: 'https://pokedex-vbl.netlify.app/',
+            github: 'https://github.com/Vinicius-B-Leite/pokedex'
         }
     ]
 

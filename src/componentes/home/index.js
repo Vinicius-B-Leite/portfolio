@@ -6,7 +6,6 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import BotaoGradiente from '../botaoGradiente';
 import BotaoVazado from '../botaoVazado';
 
-
 export default function Home(props){
     return(
             <main className='hero' id='home'>
