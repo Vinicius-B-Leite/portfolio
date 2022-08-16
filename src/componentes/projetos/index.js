@@ -1,21 +1,14 @@
 import React from 'react'
 import './estilos.scss'
-import salaoVanyBuavaLogo from '../../assets/projetos/vanylogo.jpeg'
 import blAcademiaLogo from '../../assets/projetos/blacademia.png'
 import portFolioLogo from '../../assets/projetos/portfolio.png'
 import aluraStudies from '../../assets/projetos/alurastudies.png'
 import pokedex from '../../assets/projetos/pokedex.png'
 import BotaoSimples from '../botaoSimples'
+import devmedia from '../../assets/projetos/devmedia.png'
 
 export default function Projetos(){
     const projetos = [
-        {
-            titulo: 'Salão Vany Buava',
-            descricao: <p  className='legenda-paragrafo'>[Em desenvolimento] <br/> Este projeto foi feito para um salão de beleza da cidade em que eu moro, e também foi a minha primeira oportunidade como freelancer. <br/> HTML | CSS | JavaScript</p>,
-            imagemFundo: salaoVanyBuavaLogo,
-            link: 'https://salaovanybuava.netlify.app/',
-            github: 'https://github.com/Vinicius-B-Leite/salao-vany-buava'
-        },
         {
             titulo: 'BL Academia',
             descricao: <p className='legenda-paragrafo'>Projeto de estudo para aplicar os conhecimentos de responsividade adiquiridos no curso da Alura <br/> HTML | CSS</p>,
@@ -43,6 +36,13 @@ export default function Projetos(){
             imagemFundo: pokedex,
             link: 'https://pokedex-vbl.netlify.app/',
             github: 'https://github.com/Vinicius-B-Leite/pokedex'
+        },
+        {
+            titulo: 'Prova Devmedia',
+            descricao: <p className='legenda-paragrafo'>Projeto desenvolvido a partir da prova técnica da Devmedia, mas adaptei para os meus conhecimentos atuais. <br/> HTML | SCSS | React</p>,
+            imagemFundo: devmedia,
+            link: 'https://prova-tecnica-devmedia.netlify.app/',
+            github: 'https://github.com/Vinicius-B-Leite/devmedia-prova'
         }
     ]
 
