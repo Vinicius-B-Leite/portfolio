@@ -39,7 +39,7 @@ export default function Projetos(){
         },
         {
             titulo: 'Prova Devmedia',
-            descricao: <p className='legenda-paragrafo'>Projeto desenvolvido a partir da prova técnica da Devmedia, mas adaptei para os meus conhecimentos atuais. <br/> HTML | SCSS | React</p>,
+            descricao: <p className='legenda-paragrafo'>Projeto desenvolvido a partir da prova técnica da Devmedia, mas adaptei para os meus conhecimentos atuais. <br/> HTML | SCSS | TypeScript | React</p>,
             imagemFundo: devmedia,
             link: 'https://prova-tecnica-devmedia.netlify.app/',
             github: 'https://github.com/Vinicius-B-Leite/devmedia-prova'
